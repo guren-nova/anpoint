@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レクリBOTの稼働状況</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="レクリBOTの稼働状況や、バグ等の確認が可能です（閲覧には、利用者用パスワードが必要です）">
+    <link rel="stylesheet" type="text/css" href="botstatus.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body class="not-logged-in">
+    <div id="notlogin" class="sirase">
+        <h1>レクリBOT稼働状況ステータス確認サイト「利用者専用」</h1>
+        <h3>この情報を見るには、利用開始時に割り振られた管理番号を入れてください</h3>
+        <input type="password" id="botid" placeholder="管理番号">
+        <button onclick="login()">閲覧する</button>
+        <p id="admin-message" style="display: none; color: green;">管理者認証されました！</p>
+        <p id="error-message" class="error"></p>
+        <p style="margin-top: 1rem;">
+            <a href="#" onclick="toggleHelp();" style="color: blue; text-decoration: underline;">
+                管理番号を忘れましたか？ここをクリックしてください
+            </a>
+        </p>
+        <p style="margin-top: 1rem;">
+            <a href="#" onclick="toghelplogin();" style="color: blue; text-decoration: underline;">
+                ログインが出来ませんか？ここをクリックしてください
+            </a>
+        </p>
+        <div id="help-text" style="display: none; margin-top: 1rem; ">
+            <h4>導入時、以下のようなメッセージが、レクリBOTから届いていませんか？</h4>
+            <img src="help1.png" alt="管理番号">
+            <p>※もし障害が起きてる場合、BOT管理チームから連絡が来ています</p>
+            <h4 style="color: red;">もし届いていないまたは紛失した場合、レポートにてお知らせください</h4>
+            <h3>レポート方法</h3>
+            <p>種類:管理番号の問い合わせ</p>
+        </div>
+        <div id="help-login" style="display: none; margin-top: 1rem;">
+            <h4>1.入力した管理番号があっているか確認してください</h4>
+            <h4>2.全角で入力していないか確認してください。「半角のみ動作します」</h4>
+            <h4>3.BOTサポートのおしらせにて、ログインに関する障害などの知らせは来ていませんか？</h4>
+            <h5>以上のことをすべて確認しても状況が改善されない場合、レポートを送ってください</h5>
+        </div>
+    </div>
+    <div id="notice" class="sirase">
+        <h2>最近の更新内容、お知らせ</h2>
+        <p>現在発表無し</p>
+    </div>
+    <div id="login" style="display: none;">
+        <h1>現在のレクリBOTに関するステータス</h1>
+        <p><span class="hijodot"></span>:緊急対応及び障害内容 <span class="dot"></span>:正常稼働 <span class="taidot"></span>:対応中 <span class="hodot"></span>:保留 <span class="tyoudot"></span>:調査中</p>
+        <h3><span class="dot"></span> 稼働状況:正常</h3>
+        <h3><span class="dot"></span> コマンド状況:異常なし</h3>
+        <h3><span class="dot"></span> メンテナンス状況:現在メンテナンス無し</h3>
+        <h3><span class="dot"></span> 利用者停止措置の稼働状況:正常</h3>
+        <hr style="border: 1px solid black; width: 100%; margin: 10px auto;">
+        <h1>バグに関するステータス及び対応内容</h1>
+        <p>一件の未解決障害があります</p>
+        <ul>
+            <li><span class="hodot"></span> 内容:DM版同期の際、BOTを入れてないサーバーにもコマンドが表示される　対応内容:保留</li>
+        </ul>
+        <button onclick="logout()">ログアウト</button>
+    </div>
+    <script src="botstatus.js"></script>
+</body>
+</html>
