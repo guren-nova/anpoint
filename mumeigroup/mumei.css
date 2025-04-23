@@ -96,6 +96,7 @@ h2 {
   align-items: center;
   gap: 50px;
   background-color: rgb(38, 0, 255);
+  color: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 10px;
 }
