@@ -1,0 +1,384 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.syu {
+    animation: fadeIn 2s ease-in-out forwards;
+    display: flex;
+    font-size: 85px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.hr3{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.container {
+    text-align: center;
+}
+  
+.anga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgb(255, 183, 0);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.chai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(0, 195, 255);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(255, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.yam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(51, 205, 0);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.fin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(38, 0, 255);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.ban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(30, 255, 0);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.tatu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(224, 70, 255);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.flop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(27, 27, 27);
+  color:rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+}
+  
+.imgmen {
+    width: 13vw;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+  
+ol {
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 20px;
+    margin: 0;
+    text-align: left;
+}
+  
+ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    display: list-item;
+}
+
+ol li h3 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.yobutton {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.dibutton {
+    padding: 10px 20px;
+    background-color: #0051ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+.inbutton {
+    padding: 10px 20px;
+    background-color: #ff00b7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+.xbutton {
+    padding: 10px 20px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+.twbutton {
+    padding: 10px 20px;
+    background-color: #dd00ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+.nibutton {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+}
+
+/* —— レスポンシブ対応 —— */
+
+/* タブレット向け：幅768px以下 */
+@media screen and (max-width: 768px) {
+    .syu {
+      font-size: 3.5rem;      /* ロゴ文字を小さめに */
+      gap: 10px;
+    }
+    .img {
+      width: 40%;
+    }
+    .img2 {
+      font-size: 1.5rem;
+    }
+    .hr3 {
+      animation-delay: 3s;
+    }
+    .anga {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .chai {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .pro {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .yam {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .fin {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ban {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tatu {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .flop {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .imgmen {
+      width: 50vw;
+    }
+    ol li {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+    main a.yobutton,
+    main a.dibutton,
+    main a.inbutton,
+    main a.xbutton,
+    main a.twbutton,
+    main a.nibutton {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+    footer {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 1rem 0;
+    }
+  }
+  
+  /* スマホ向け：幅480px以下 */
+  @media screen and (max-width: 480px) {
+    .syu {
+      font-size: 2.5rem;
+    }
+    .img {
+      width: 60%;
+    }
+    .img2 {
+      font-size: 1.2rem;
+    }
+    .hr3 {
+      height: 1px;
+    }
+    .anga {
+      padding: 15px;
+    }
+    .chai {
+      padding: 15px;
+    }
+    .pro {
+      padding: 15px;
+    }
+    .yam {
+      padding: 15px;
+    }
+    .fin {
+      padding: 15px;
+    }
+    .ban {
+      padding: 15px;
+    }
+    .tatu {
+      padding: 15px;
+    }
+    .flop {
+      padding: 15px;
+    }
+    .imgmen {
+      width: 70vw;
+    }
+    ol li {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    main a.yobutton,
+    main a.dibutton,
+    main a.inbutton,
+    main a.xbutton,
+    main a.twbutton,
+    main a.nibutton {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.8rem;
+    }
+    footer {
+      gap: 8px;
+    }
+  }
+
+.yobutton:hover,
+.dibutton:hover,
+.inbutton:hover,
+.xbutton:hover,
+.twbutton:hover,
+.nibutton:hover {
+  transform: scale(1.20);
+}
+
+.imgmen:hover {
+  transform: scale(1.10);
+}
+  
