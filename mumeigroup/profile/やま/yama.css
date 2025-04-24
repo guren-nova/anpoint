@@ -1,0 +1,76 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.yam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.imgmen {
+    width: 13vw;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.glowing {
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px rgba(8, 125, 0, 0.7),
+              0 0 20px rgba(8, 125, 0, 0.8),
+              0 0 40px rgba(8, 125, 0, 0.9),
+              0 0 60px rgba(8, 125, 0, 1);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 10px rgba(8, 125, 0, 0.7),
+      0 0 20px rgba(8, 125, 0, 0.8),
+      0 0 40px rgba(8, 125, 0, 0.9),
+      0 0 60px rgba(8, 125, 0, 1);
+  }
+  50% {
+    box-shadow:
+      0 0 15px rgba(8, 125, 0, 0.7),
+      0 0 30px rgba(8, 125, 0, 0.8),
+      0 0 50px rgba(8, 125, 0, 0.9),
+      0 0 70px rgba(8, 125, 0, 1);
+  }
+}
+
+ol {
+  list-style: none;
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+ol li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: list-item;
+}
+
+ol li h3 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.imgmen:hover {
+  transform: scale(1.05);
+  box-shadow:
+      0 0 10px rgba(8, 125, 0, 0.6),
+      0 0 20px rgba(8, 125, 0, 0.7),
+      0 0 30px rgba(8, 125, 0, 0.8),
+      0 0 50px rgba(8, 125, 0, 1);
+}
