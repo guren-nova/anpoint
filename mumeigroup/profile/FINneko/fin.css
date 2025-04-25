@@ -74,3 +74,27 @@ ol li h3 {
       0 0 30px rgba(0, 33, 222, 0.8),
       0 0 50px rgba(0, 33, 222, 1);
 }
+
+.yobutton {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.yobutton:hover {
+  transform: scale(1.20);
+}
+
+.sns{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}

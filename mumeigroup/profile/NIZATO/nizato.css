@@ -75,4 +75,52 @@ ol li h3 {
       0 0 50px rgb(32, 170, 255, 1);
 }
 
+.yobutton {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.twbutton {
+  padding: 10px 20px;
+  background-color: #dd00ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.nibutton {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.yobutton:hover,
+.twbutton:hover,
+.nibutton:hover {
+  transform: scale(1.20);
+}
+
+.sns{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
 
