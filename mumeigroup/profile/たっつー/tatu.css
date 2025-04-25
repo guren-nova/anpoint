@@ -74,3 +74,35 @@ ol li h3 {
       0 0 30px rgba(177, 0, 213, 0.8),
       0 0 50px rgba(177, 0, 213, 1);
 }
+
+@media (max-width: 1024px) {
+  .tatu {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imgmen {
+    width: 40vw;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgmen {
+    width: 70vw;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}

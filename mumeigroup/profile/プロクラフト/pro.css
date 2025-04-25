@@ -75,3 +75,113 @@ line-height: 1;
       0 0 50px rgba(255, 0, 0, 1);
 }
 
+.yobutton {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.inbutton {
+  padding: 10px 20px;
+  background-color: #ff00b7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.xbutton {
+  padding: 10px 20px;
+  background-color: #252525;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.tibutton {
+  padding: 10px 20px;
+  background-color: #a5009f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.libutton {
+  padding: 10px 20px;
+  background-color: #00e013;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.sns{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.yobutton:hover,
+.inbutton:hover,
+.xbutton:hover,
+.tibutton:hover,
+.libutton:hover {
+  transform: scale(1.20);
+}
+
+@media (max-width: 1024px) {
+  .pro {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imgmen {
+    width: 40vw;
+  }
+
+  .sns {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .yobutton, .inbutton, .xbutton, .tibutton, .libutton {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgmen {
+    width: 70vw;
+  }
+
+  .yobutton, .inbutton, .xbutton, .tibutton, .libutton {
+    width: 90%;
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  ol li, ol li h3 {
+    font-size: 16px;
+  }
+}

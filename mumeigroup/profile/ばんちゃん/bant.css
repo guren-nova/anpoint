@@ -75,4 +75,34 @@ ol li h3 {
       0 0 50px rgba(72, 255, 59, 1);
 }
 
+@media (max-width: 1024px) {
+  .ban {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
 
+  .imgmen {
+    width: 40vw;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgmen {
+    width: 70vw;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}

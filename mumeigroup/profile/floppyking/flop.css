@@ -74,3 +74,49 @@ ol li h3 {
       0 0 30px rgba(32, 32, 32, 0.8),
       0 0 50px rgba(32, 32, 32, 1);
 }
+
+/* タブレット対応（横幅768px以下） */
+@media (max-width: 1024px) {
+  .flop {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .imgmen {
+    width: 40vw;
+  }
+
+  ol {
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 17px;
+  }
+}
+
+/* スマホ対応（横幅600px以下） */
+@media (max-width: 600px) {
+  .flop {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imgmen {
+    width: 70vw;
+  }
+
+  ol {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 16px;
+  }
+}

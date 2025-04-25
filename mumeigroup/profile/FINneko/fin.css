@@ -98,3 +98,49 @@ ol li h3 {
   justify-content: center;
   gap: 20px;
 }
+
+/* タブレット対応（横幅768px以下） */
+@media (max-width: 1024px) {
+  .fin {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+  }
+
+  .imgmen {
+    width: 40vw;
+  }
+
+  ol {
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 17px;
+  }
+}
+
+/* スマホ対応（横幅600px以下） */
+@media (max-width: 600px) {
+  .fin {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imgmen {
+    width: 60vw;
+  }
+
+  ol {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 16px;
+  }
+}

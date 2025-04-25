@@ -124,3 +124,78 @@ ol li h3 {
   gap: 20px;
 }
 
+/* タブレット対応（横幅768px以下） */
+@media (max-width: 1024px) {
+  .chai {
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .imgmen {
+    width: 40vw;
+  }
+
+  .sns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .yobutton,
+  .twbutton,
+  .nibutton {
+    font-size: 17px;
+    padding: 10px 15px;
+  }
+
+  ol {
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 17px;
+  }
+}
+
+/* スマホ対応（横幅600px以下） */
+@media (max-width: 600px) {
+  .chai {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .imgmen {
+    width: 70vw;
+  }
+
+  .sns {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .yobutton,
+  .twbutton,
+  .nibutton {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  ol {
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  ol li,
+  ol li h3 {
+    font-size: 16px;
+  }
+}
+
+
