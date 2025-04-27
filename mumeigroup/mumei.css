@@ -131,6 +131,17 @@ h2 {
   padding: 30px;
   border-radius: 10px;
 }
+
+.himu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+}
   
 .imgmen {
     width: 13vw;
@@ -287,6 +298,10 @@ footer{
       flex-direction: column;
       gap: 20px;
     }
+    .himu {
+      flex-direction: column;
+      gap: 20px;
+    }
     .imgmen {
       width: 50vw;
     }
@@ -347,6 +362,9 @@ footer{
       padding: 15px;
     }
     .flop {
+      padding: 15px;
+    }
+    .himu {
       padding: 15px;
     }
     .imgmen {
