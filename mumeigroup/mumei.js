@@ -1,7 +1,3 @@
-function ancli() {
-    alert("ごめんねないんだ by ちーほや");
-}
-
-function bancli(){
-    alert("アカウント？ﾅﾆｿﾚｵｲｼｲﾉ? by ばんちゃん");
+function crete() {
+    alert("現在本人とサイト作成者含めめちゃくちゃ作成に取り組んでいます！少々お待ち下さい！");
 }
